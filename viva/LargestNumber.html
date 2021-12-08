@@ -1,0 +1,35 @@
+<!-- 2)JavaScript program to find the largest among three number -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Viva</title>
+  </head>
+
+  <body>
+
+<script>
+    var firstNum = parseInt(prompt("Enter first number"));
+    var secondNum = parseInt(prompt("Enter second number"));
+    var thirdNum = parseInt(prompt("Enter third number"));
+
+    largest(firstNum, secondNum, thirdNum);
+    
+    function largest(firstNum, secondNum, thirdNum){
+        if(firstNum > secondNum) {
+            if (firstNum > thirdNum){
+                alert(firstNum + " is Largest");
+            } else {
+                alert(thirdNum + " is Largest");    
+            }
+        } else if(secondNum > thirdNum){
+            alert(secondNum + " is Largest");
+        } else {
+            alert(thirdNum + " is Largest");
+        }
+    }
+    
+    </script>
+  </body>
+</html>
+

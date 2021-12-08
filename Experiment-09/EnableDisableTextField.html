@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Experiment-09</title>
+    </head>
+
+    <body>
+        <label for="textField">Name: 
+            <input type="text" id="textField" value="Anurag">
+        </label>
+
+        <button id="disable" onclick="disableText()">disable</button>
+        <button id="enable" onclick="enableText()">Enable</button>
+    </body>
+
+    <script>
+        function disableText () {
+            document.getElementById("textField").disabled = true;
+        }
+
+        function enableText () {
+            document.getElementById("textField").disabled = false;
+        }
+
+    </script>
+</html>

@@ -1,0 +1,24 @@
+<!-- JavaScript program to print multiplication table. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Viva</title>
+  </head>
+
+  <body>
+    <script>
+        var number = parseInt(prompt("Enter a number"));
+    muiltiplicationTable(number);
+
+    var result = 0;
+    function muiltiplicationTable(num){
+        for (let i = 0; i < 13; i++) {
+            result = num * i;   
+            document.write(num + " X " + i + " = " + result + "<br>")          
+        }
+    }
+
+    </script>
+  </body>
+</html>

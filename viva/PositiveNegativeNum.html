@@ -1,0 +1,27 @@
+<!-- Write a JavaScript to check if a number is positive, negative or zero. Use prompt method to accept number -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Viva</title>
+  </head>
+
+  <body>
+
+<script>
+    var num = parseInt(prompt("Enter a number"));
+    checkSign(num);
+
+    function checkSign(num){
+        if(num < 0) {
+            alert(num + " is negative");
+        } else if(num > 0){
+            alert(num + " is positive");
+        } else {
+            alert("You entered 0");
+        }
+    }
+    </script>
+  </body>
+</html>
+

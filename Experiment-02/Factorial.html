@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <head>
+            <title>Experiment-2</title>
+        </head>
+        <script>
+            var num = parseInt(prompt("Enter a number:"));
+            
+           var fact = 1;
+
+           if (num < 0) {
+               alert("Factorial for negative number does not exist.")
+           } else {
+               for (let i = 1; i < num + 1; i++) {
+                   fact *= i;
+              }
+              alert("Factorial of " + num + " = " + fact);
+           }
+
+        </script>
+    </body>
+</html>

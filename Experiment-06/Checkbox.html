@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment-6</title>
+</head>
+<body>
+        <label ><input type = "checkbox" id = "check" name = "check" onchange = "isChecked()" > Checked </label>
+             
+    <script>
+        function isChecked () {
+            var checkbox = document.getElementById("check");
+            var textbox = document.getElementById("text");
+            var btn = document.getElementById("btn");
+
+            if (checkbox.checked) {
+                document.body.style.backgroundColor = "red";
+                document.body.style.color = "white";
+            } else {
+                document.body.style.backgroundColor = "blue";
+                document.body.style.color = "white";
+            }   
+        }
+        isChecked();
+    </script>
+
+</body>
+</html>

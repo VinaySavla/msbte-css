@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <head>
+      <title>Experiment-5</title>
+    </head>
+    <script>
+      document.write(TitleCase("anurag dubey"));
+      function TitleCase(str) {
+        replace(/\w\S*/g, function(str){return str.charAt(0).toUpperCase() + str.substr(1).toLowerCase();});
+  };
+    </script>
+  </body>
+</html>

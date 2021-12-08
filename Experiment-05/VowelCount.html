@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <head>
+      <title>Experiment-5</title>
+    </head>
+    <script>
+        var str = prompt("Enter a string: ");
+        countVowel(str);
+
+        function countVowel(str) {
+            var vowelCount = 0;
+            const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+            for(let letter of str.toLowerCase()){
+                if(vowels.includes(letter)) {
+                    vowelCount++;
+                }
+            }
+           
+            alert("There are " + vowelCount + " vowels in " + str);
+        }             
+    </script>
+  </body>
+</html>

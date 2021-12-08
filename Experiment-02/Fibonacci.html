@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <head>
+            <title>Experiment-2</title>
+        </head>
+        <script>
+            var num = parseInt(prompt("Enter number of terms:"));
+            
+            var firstNumber = 0;
+            var secondNumber = 1;
+            var thirdNumber;
+                        
+               for (let i = 1; i < num + 1; i++) {
+                document.write(firstNumber + "\n\n");
+                thirdNumber = firstNumber + secondNumber;
+                firstNumber = secondNumber;
+                secondNumber = thirdNumber;
+            }
+
+        </script>
+    </body>
+</html>

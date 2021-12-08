@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Experiemtn-10</title>
+</head>
+
+<body>
+
+    <input type="button" value="Set Cookie1" onclick="setCookie()">
+    <input type="button" value="Get Cookie1" onclick="getCookie()">
+    <input type="button" value="Delete Cookie1" onclick="deleteCookie()">
+
+    <script>
+        function setCookie() {
+            document.cookie = "name=Anurag Dubey";
+            cookie1 = document.cookie;
+            alert("Cookie Written")
+        }
+
+        function getCookie() {
+            if (cookie1.length != 0) {
+                alert(cookie1);
+            }
+            else {
+                alert("Cookie not available");
+            }
+        }
+
+        function deleteCookie() {
+            document.cookie = cookie1 + "; expires=Sun, 20 Aug 2000 12:00:00 UTC";
+            cookie1 = document.cookie;
+            alert("Cookie is deleted");
+        }
+    </script>
+</body>
+
+</html>

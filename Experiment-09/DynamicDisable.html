@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Experiment-09</title>
+    </head>
+
+    <body>
+        <input type="radio" id="male" name="gender" onchange="myFunction()">Male
+        <input type="radio" id="female" name="gender" onchange="myFunction()">Female
+        <br>
+        <input type="text" id="textBox" value="">
+
+    </body>
+    <script>
+        function myFunction() {
+            var male = document.getElementById("male");
+            var female = document.getElementById("female");
+            var textBox = document.getElementById("textBox");
+
+            if(male.checked){
+                textBox.value = "Male";
+                textBox.disabled = "true";
+            } else {
+                textBox.value = "Female";
+                textBox.disabled = "true";
+            }
+        }
+    </script>
+</html>

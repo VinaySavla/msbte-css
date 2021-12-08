@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Experiment-03</title>
+</head>
+
+<body>
+    <div id="output"></div>
+
+    <script>
+        var arr = [
+            ["Name", "Sub1", "Sub2", "Sub3"],
+            ["aaa", 45, 26, 23],
+            ["bbb", 46, 49, 50],
+            ["ccc", 24, 50, 48]
+        ];
+
+        document.write("<pre>");
+        arr.forEach(elem => document.write(`${elem.join("\t")}<br/>`));
+        document.write("</pre>");
+    </script>
+</body>
+
+</html>

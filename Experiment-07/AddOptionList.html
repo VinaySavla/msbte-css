@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Experiment-7</title>
+    </head>
+
+    <body style="text-align: center;">
+        <label for="list">
+            Numbers:
+        </label>
+            <select id = "list">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+        <h3>Click the button to add more numers in the list</h3>
+        <button id="add" onclick="addNumber()">Add</button>
+
+            <script>
+                function addNumber() {
+                    var list = document.getElementById("list");
+                    count = list.length;
+                    var option = document.createElement("option");
+                    option.text = count + 1;
+                    list.add(option, list.length);
+                }
+            </script>
+            
+    </body>
+</html>

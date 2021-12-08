@@ -1,0 +1,26 @@
+<head>
+    <style>
+        div {
+            background: blueviolet;
+            border: 1px solid black;
+            color: wheat;
+            font-weight: 700;
+            font-size: larger;
+            padding: 10px;
+            margin: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div oncontextmenu="myFunction()" contextmenu="mymenu">
+        <p>Right-click inside this box to see the context menu!
+    </div>
+    <script>
+        function myFunction() {
+            alert("You right-clicked inside the div!");
+        }
+    </script>
+</body>
+
+</html>

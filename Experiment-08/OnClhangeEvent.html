@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Experiment-6</title>
+</head>
+
+<body>
+    <label><input type="radio" id="checkbox1" name= "choice" onchange="changeColor()"> Red </label>
+    <label><input type="radio" id="checkbox2" name= "choice" onchange="changeColor()"> Blue </label>
+    <label><input type="radio" id="checkbox3" name= "choice" onchange="changeColor()"> Yelllow </label>
+    <label><input type="radio" id="checkbox4" name= "choice" onchange="changeColor()"> Green </label>
+
+    <script>
+        function changeColor() {
+            var red = document.getElementById("checkbox1");
+            var blue = document.getElementById("checkbox2");
+            var yellow = document.getElementById("checkbox3");
+            var green = document.getElementById("checkbox4");
+
+            if (red.checked) {
+                document.body.style.backgroundColor = "red";
+                document.body.style.color = "white";
+            } else if (blue.checked) {
+                document.body.style.backgroundColor = "blue";
+                document.body.style.color = "white";
+            } else if (yellow.checked) {
+                document.body.style.backgroundColor = "yellow";
+                document.body.style.color = "white";
+            } else if (green.checked) {
+                document.body.style.backgroundColor = "green";
+                document.body.style.color = "white";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
