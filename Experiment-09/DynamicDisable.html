@@ -7,7 +7,7 @@
         <input type="radio" id="male" name="gender" onchange="myFunction()">Male
         <input type="radio" id="female" name="gender" onchange="myFunction()">Female
         <br>
-        <input type="text" id="textBox" value="">
+        <input type="text" id="textBox" value="" readonly>
 
     </body>
     <script>
@@ -18,10 +18,8 @@
 
             if(male.checked){
                 textBox.value = "Male";
-                textBox.disabled = "true";
             } else {
                 textBox.value = "Female";
-                textBox.disabled = "true";
             }
         }
     </script>
